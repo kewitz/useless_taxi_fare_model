@@ -4,9 +4,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-from encoders import DistanceTransformer, TimeFeaturesEncoder
-from data import get_data, clean_data
-from utils import compute_rmse
+from TaxiFareModel.encoders import DistanceTransformer, TimeFeaturesEncoder
+from TaxiFareModel.data import get_data, clean_data
+from TaxiFareModel.utils import compute_rmse
 
 
 class Trainer():
