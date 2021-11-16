@@ -43,6 +43,8 @@ class Trainer():
     def run(self):
         """set and train the pipeline"""
         print('Running model...')
+        if self.pipeline is None:
+            self.set_pipeline()
         self.pipeline.fit(self.X, self.y)
         return self.pipeline
 
